@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COFFE SHOP</title>
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="/themify-icons/themify-icons.css">
+</head>
+<body>
+  <!--Sit on top-->
+  <div id="shop-top">
+    <div class="shop-row shop-padding shop-black">
+      <div class="shop-col s3">
+        <a href="#" class="shop-button shop-block shop-black">HOME</a>
+      </div>
+      <div class="shop-col s3">
+        <a href="#about" class="shop-button shop-block shop-black">ABOUT</a>
+      </div>
+      <div class="shop-col s3">
+        <a href="#menu" class="shop-button shop-block shop-black">MENU</a>
+      </div>
+      <div class="shop-col s3">
+        <a href="#where" class="shop-button shop-block shop-black">WHERE</a>
+      </div>
+    </div>
+  </div>
+  <!--img header-->
+  <header class="shop-display-container shop-grayscal-min" id="home">
+    <img src="/img/coffee-shop-tai-nam-dao-phu-quoc.jpg" alt="coffe" class="shop-img">
+    <div class="shop-display-bottomleft shop-center shop-padding-large shop-hide-small">
+      <span class="time-tag">Open: 7 A.M and Close: 8 P.M</span>
+    </div>
+    <div class="shop-display-middle shop-center">
+      <span class="text-white">
+        The
+        <br>
+        Coffee House
+      </span>
+    </div>
+    <div class="shop-display-bottomright shop-center shop-padding-large shop-hide-small">
+      <span class="address-tag">36/06/NA/PT/Hue CiTy/VietNam</span>
+    </div>
+  </header>
+  <!--Add a background color and large text to the whole page-->
+  <div class="shop-sand shop-grayscale shop-large"> 
+    <!--About Container-->
+    <div class="shop-container" id="about">
+      <div class="back-content">
+        <h5 class="shop-center text-padding-64">
+          <span class="text-tag text-wide">ABOUT THE COFFEE</span>
+        </h5>
+        <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+        <div class="text-panel text-leftbar text-light-grey">
+          <p>
+            <i style="font-style: italic;">"Use products from nature for what it's worth - but never too early, nor too late." "Fresh is the new sweet."</i>
+          </p>
+          <p style="font-style: oblique;">Chef, Coffeeist and Owner: Liam Brown</p>
+        </div>
+        <img src="/img/coffeeshop.jpg" alt="shop" style="width: 100%; max-width: 1000px;" class="img-margin-top">
+        <p>
+          <strong>Opening hours:</strong>
+           everyday from 7 A.M to 8 P.M
+        </p>
+        <p>
+          <strong>Address:</strong>
+           36/06/ Ngoc Anh / Phu Thuong / Hue City / Viet Nam
+        </p>
+      </div>
+    </div>
+    <!--Menu Container-->
+    <div class="shop-container" id="menu">
+      <div class="back-content">
+        <h5 class="shop-center text-padding-64">
+          <span class="text-tag text-wide">THE MENU</span>
+        </h5>
+        <div class="shop-row shop-center shop-card shop-padding">
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="my Link"> 
+              <div class="shop-col s6 tablink shop-dark-grey">Eat</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+              <div class="shop-col s6 tablink">Drinks</div>
+          </a>
+        </div>
+        <div id="Eat" class="shop-container menu shop-padding-48 shop-card" style="display: block;">
+          <h5>Bún Bò</h5>
+          <p class="shop-text-grey">Bò Giò Chả ngon vcl : 25k</p>
+          <br>
+          <h5>Bánh Mỳ</h5>
+          <p class="shop-text-grey">Đầy đủ các loại, ăn 3 ổ vẫn thấy chưa đủ : 12k</p>
+          <br>
+          <h5>Bún Riêu</h5>
+          <p class="shop-text-grey">Ngon hay dở tùy tâm trạng : 20k</p>
+          <br>
+          <h5>Xôi</h5>
+          <p class="shop-text-grey">Xôi Gà, Pate, Lộn Xộn, Trứng,... : 15k</p>
+          <br>
+          <h5>Phở</h5>
+          <p class="shop-text-grey">Chỉ có Phở Bò : 25k</p>
+          <br>
+          <h5>Bún đậu mắm tôm</h5>
+          <p class="shop-text-grey">Cũng hơi ngon, ngon hơn khi dùng nước mắm hoặc xì dầu : 25k</p>
+          <br>
+          <h5>Bánh canh cua</h5>
+          <p class="shop-text-grey">Dở, không có cua , khuyên thật lòng đừng ăn : 20k</p>
+          <br>
+          <h5>Bánh tráng trộn</h5>
+          <p class="shop-text-grey">Ngon nhưng mỏi miệng : 15k/1 phần</p>
+          <br>
+        </div>
+        <div id="Drinks" class="shop-container menu shop-padding-48 shop-card" style="display: none;">
+          <h5>Bạc Xỉu</h5>
+          <p class="shop-text-grey">Đỉnh của chóp S.ABCD : 22k</p>
+          <br>
+          <h5>Espresso</h5>
+          <p class="shop-text-grey">Nóng/Lạnh : 18k</p>
+          <br>
+          <h5>Cappuccino</h5>
+          <p class="shop-text-grey">Đẹp thôi chứ không ngon cho lắm : 25k</p>
+          <br>
+          <h5>Cafe Đen</h5>
+          <p class="shop-text-grey">Thất tình rồi uống : 15k</p>
+          <br>
+          <h5>Cafe sữa SG</h5>
+          <p class="shop-text-grey">Ngon : 12k</p>
+          <br>
+          <h5>Cafe Trứng</h5>
+          <p class="shop-text-grey">Ngon, nên uống thử : 22k</p>
+          <br>
+          <h5>Ka Kao nóng</h5>
+          <p class="shop-text-grey">Như Milo nhưng mắc hơn, không có gì đặc biệt : 15k</p>
+          <br>
+          <h5>Americano</h5>
+          <p class="shop-text-grey">Tạm : 20k</p>
+          <br>
+          <h5>Nước Ép</h5>
+          <p class="shop-text-grey">Đầy đủ các loại ép : Ép dẻo, ép plastic lấy ngay. Để đảm bảo giấy tờ bền đẹp, chúng tôi chuyên ép ảnh thờ, giấy ly hôn, giấy cầm đồ, giấy vay nợ,..... nước ép trái cây, nước ép dừa, nước ép sầu riêng nguyên vỏ, bánh ép : Giá cả thương lượng</p>
+          <br>
+        
+        
+        
+        </div>
+        <img src="/img/Leseempfehlung_ Guten Morgen, Welt!.jfif" alt="coffe" style="width: 100%; max-width: 1000px; margin-top: 32px;">
+      </div>
+    </div>
+    <!--Contact/Area Container-->
+    <div class="shop-container" id="where" style="padding-bottom: 32px">
+      <div class="back-content">
+        <h5 class="shop-center text-padding-64">
+          <span class="text-tag text-wide">WHERE TO FIND US</span>
+        </h5>
+        <p>
+          Cứ đến 36/06/Ngọc Anh/ Phú Thượng/ TP.Huế là thấy!
+        </p>
+        <p>
+          <strong>SĐT : </strong>
+          1234567890
+        </p>
+        <div class="socials">
+          <a href="https://www.facebook.com/profile.php?id=100074387220686"><i class="ti-facebook"></i></a>
+          <a href="https://www.instagram.com/baro_3112/"><i class="ti-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCuAXFkgsw1L7xaCfnd5JJOw"><i class="ti-youtube"></i></a>
+          <a href="https://www.pinterest.com/tan171003/_saved/"><i class="ti-pinterest"></i></a>
+      </div>
+        <img src="/img/270945866_463500328581752_4052311218361437317_n.png" alt="dc" class="address-img" style="width: 100%;">
+        <p>
+          <strong>Đánh Giá</strong>
+          <i class="socials-2 ti-hand-open"></i>
+          :
+          <i class="socials-2 ti-star"></i>
+          <i class="socials-2 ti-star"></i>
+          <i class="socials-2 ti-star"></i>
+          <i class="socials-2 ti-star"></i>
+          <i class="socials-2 ti-star"></i>
+        </p>
+        <p>
+          <span class="text-tag">BARO</span>
+          <i class="socials-2 ti-star"></i>
+          : 
+          Cafe rất là thơm ngon, nhân viên nhiệt tình, đặc biệt là có bạn nhân viên Ngọc Bảo rất là đẹp trai và thân thiện. Cho 1 sao vì quán mở bài Super Idol de xiào róng dōu méi nǐ de tián bā yuè zhèng wǔ de yáng guāng dōu méi nǐ yào yǎn rè ài yī bǎi líng wǔ dù de nǐ dī dī qīng chún de zhēng liú shuǐ làm mình phải nhập viện khẩn cấp
+        </p>
+        <p>
+          <span class="text-tag">Nguyễn Đình Ngọc Bảo</span>
+          <i class="socials-2 ti-star"></i>
+          <i class="socials-2 ti-star"></i>
+          <i class="socials-2 ti-star"></i>
+          <i class="socials-2 ti-star"></i>
+          <i class="socials-2 ti-star"></i>
+          : 
+          Đồ ăn , phục vụ, cafe rất tuyệt vời và cám ơn quán rất nhiều vì nhờ các món của quán mà thằng bạn Ngọc Trí của tôi đã có thể trở lại bình thường sau một thời gian dài bị bệnh trầm cảm sau sinh
+        </p>
+        <p>
+          <span class="text-tag">Khoa Boobs</span>
+          <i class="socials-2 ti-star"></i>
+          <i class="socials-2 ti-star"></i>
+          <i class="socials-2 ti-star"></i>
+          <i class="socials-2 ti-star"></i>
+          <i class="socials-2 ti-star"></i>
+          : 
+          Tuyệt vời! 
+        </p>
+        <p>
+          <span class="text-tag">Joinny Damn</span>
+          <i class="socials-2 ti-star"></i>
+          <i class="socials-2 ti-star"></i>
+          : 
+          Tất cả đều ok nhưng có thằng Khoa Boobs ăn nên cho 2 sao
+        </p>
+        <p>
+          <span class="text-tag">Thầy Ông Nội</span>
+          <i class="socials-2 ti-star"></i>
+          <i class="socials-2 ti-star"></i>
+          <i class="socials-2 ti-star"></i>
+          <i class="socials-2 ti-star"></i>
+          : 
+          Ngon nha các con! Thầy giờ ở trong tù thèm quá mà không thể ăn được
+        </p>
+        <p>
+          <span class="text-tag">Rô lan đô</span>
+          <i class="socials-2 ti-star"></i>
+          <i class="socials-2 ti-star"></i>
+          <i class="socials-2 ti-star"></i>
+          <i class="socials-2 ti-star"></i>
+          : 
+          SIUUUUUUUUUUU
+        </p>
+        <p>
+          <span class="text-tag">Cho Vay Vốn</span>
+          <i class="socials-2 ti-star"></i>
+          <i class="socials-2 ti-star"></i>
+          <i class="socials-2 ti-star"></i>
+          <i class="socials-2 ti-star"></i>
+          : 
+          NỢ XẤU , NỢ CHÚ Ý . KHÔNG CẦN QAN NGẠI LIÊN HỆ TRỰC TIẾP QUA ZALO ☎ : 9876543210 ĐỂ ĐƯỢC HƯỚNG DẪN LÀM HỒ SƠ THỦ TỤC VAY KHOẢN VAY
+        </p>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  
+  <div id="footer">
+
+  </div>
+  <script>
+    // Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" shop-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " shop-dark-grey";
+}
+document.getElementById("myLink").click();
+  </script>
+</body>
+</html>
